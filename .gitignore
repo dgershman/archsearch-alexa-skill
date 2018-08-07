@@ -20,3 +20,6 @@ var/
 .serverless
 
 .idea
+venv
+node_modules
+.vscode

@@ -4,9 +4,12 @@ service: archsearch-alexa-skill
 provider:
   name: aws
   runtime: python3.6
+  timeout: 15
 
 functions:
   hello:
     handler: handler.lambda_handler
     events:
       - alexaSkill
+plugins:
+  - serverless-python-requirements
